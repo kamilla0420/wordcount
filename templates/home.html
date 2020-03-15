@@ -1,0 +1,14 @@
+<h1>wordcount</h1>
+
+{{ date }}
+<br />
+
+<a href=" {% url 'about' %} ">Show me the author</a>
+
+<br/>
+
+<form action=" {% url 'count' %}">
+	<textarea cols="50" rows="10" name="count"></textarea>
+	<br />
+	<input type="submit" value="Count!" />
+</form>
